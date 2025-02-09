@@ -1,0 +1,229 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #3d2c2c;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header .logo img {
+    height: 100px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.cta .cta-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta .cta-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Imagem de Destaque */
+.hero {
+    background: url('pizza.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about, .menu, .offers, .testimonials, .location {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-btn {
+    background-color: #28a745; /* verde */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #218838; /* tom mais escuro de verde no hover */
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.offer {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/*seja um franqueado*/
+
+.highlight-box {
+    background-color: #ff6f00;  /* Cor de fundo amarela */
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.highlight-box h3 {
+    font-size: 1rem;
+    color: #000;
+}
+
+.highlight-box span {
+    font-weight: bold;
+    color: #ffffff;  /* Cor de destaque para o lucro */
+}
+
+/* Seção sobre Franqueados */
+.franchise {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.franchise p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.franchise-value {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.franchise-value h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3d2c2c;
+}
+
+.franchise-value ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.franchise-value ul li {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.franchise-value ul li strong {
+    color: #3d2c2c;
+}
