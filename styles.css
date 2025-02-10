@@ -227,3 +227,46 @@ footer {
 .franchise-value ul li strong {
     color: #3d2c2c;
 }
+
+
+
+/* Seção de Imagens */
+.images-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.small-image {
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.small-image:hover {
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
