@@ -137,13 +137,24 @@ h2 {
     border-radius: 10px;
 }
 
-.testimonial {
-    background-color: #f9f9f9;
-    margin: 20px auto;
-    padding: 20px;
-    width: 60%;
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+    margin-bottom: 20px;
+}
+
+.testimonial-img {
+    width: 80%; /* Ajuste o tamanho conforme necessário */
+    max-width: 600px; /* Limita o tamanho máximo da imagem */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
