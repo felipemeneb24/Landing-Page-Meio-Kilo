@@ -48,6 +48,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    text-transform: uppercase; /* Letras maiúsculas */
 }
 
 .cta .cta-btn:hover {
