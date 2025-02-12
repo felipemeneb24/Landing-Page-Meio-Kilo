@@ -8,8 +8,10 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #3d2c2c;
+    background-color: #f4f4f4;
     color: #333;
+    padding: 0;
+    margin: 0;
 }
 
 /* Cabeçalho */
@@ -20,15 +22,21 @@ body {
     background-color: #ff6f00;
     color: #fff;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .header .logo img {
-    height: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: 80px; /* Logo ajustada */
 }
 
 .nav ul {
     list-style: none;
     display: flex;
+    margin-right: 20px;
 }
 
 .nav ul li {
@@ -48,7 +56,8 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    text-transform: uppercase; /* Letras maiúsculas */
+    text-transform: uppercase;
+    margin-left: 10px;
 }
 
 .cta .cta-btn:hover {
@@ -58,12 +67,14 @@ body {
 /* Imagem de Destaque */
 .hero {
     background: url('pizza.jpg') no-repeat center center/cover;
-    height: 400px;
+    height: 100vh; /* Aumenta para ocupar toda a tela */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .hero-text h2 {
@@ -102,19 +113,20 @@ section {
 }
 
 .order-btn:hover {
-    background-color: #218838; /* tom mais escuro de verde no hover */
+    background-color: #218838;
 }
-
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
+/* Estilos de Menu */
 .menu-items {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .menu-item {
@@ -123,6 +135,12 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     width: 30%;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Efeito hover */
 }
 
 .menu-item h3 {
@@ -174,27 +192,6 @@ footer {
     text-decoration: underline;
 }
 
-/*seja um franqueado*/
-
-.highlight-box {
-    background-color: #ff6f00;  /* Cor de fundo amarela */
-    padding: 10px 30px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-.highlight-box h3 {
-    font-size: 1rem;
-    color: #000;
-}
-
-.highlight-box span {
-    font-weight: bold;
-    color: #ffffff;  /* Cor de destaque para o lucro */
-}
-
 /* Seção sobre Franqueados */
 .franchise {
     background-color: #fff;
@@ -203,13 +200,6 @@ footer {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.franchise p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
 }
 
 .franchise-value {
@@ -240,8 +230,6 @@ footer {
     color: #3d2c2c;
 }
 
-
-
 /* Seção de Imagens */
 .images-section {
     background-color: #f9f9f9;
@@ -253,32 +241,63 @@ footer {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .small-image {
-    width: 25%;
+    width: 30%;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
 .small-image:hover {
-    transform: scale(1.05); /* Efeito de aumento no hover */
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    .image-container {
+    /* Cabeçalho fixo em mobile */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .cta .cta-btn {
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: 60vh; /* Ajusta a altura em dispositivos menores */
+    }
+
+    .menu-items {
         flex-direction: column;
         align-items: center;
     }
 
-    .small-image {
-        width: 80%;
+    .menu-item {
+        width: 80%; /* Ajuste para dispositivos móveis */
         margin-bottom: 20px;
     }
+
+    .small-image {
+        width: 80%; /* Ajuste para dispositivos móveis */
+        margin-bottom: 20px;
+    }
+
+    .franchise-value {
+        width: 90%; /* Ajuste para dispositivos móveis */
+        margin: 0 auto;
+    }
+
+    .order-btn {
+        width: 100%; /* Botão de pedido ocupa toda a largura */
+    }
 }
-
-
-
-
-
