@@ -121,8 +121,10 @@ h2 {
 
 .menu-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;     /* Centraliza os itens verticalmente, se necessário */
     margin-top: 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas pequenas */
 }
 
 .menu-item {
@@ -130,8 +132,10 @@ h2 {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 30%; /* A largura original dos itens */
+    margin: 10px; /* Adicionando margem entre os itens */
     box-sizing: border-box;
+    text-align: center;
 }
 
 .menu-item h3 {
@@ -290,12 +294,14 @@ footer {
     }
 
     .menu-items {
-        flex-direction: column;
+        flex-direction: column; /* Organiza os itens em coluna em telas pequenas */
+        justify-content: center; /* Garante que os itens fiquem centralizados */
+        align-items: center;     /* Alinha os itens ao centro */
     }
 
     .menu-item {
-        width: 80%; /* Aumentando a largura dos itens no menu em telas pequenas */
-        margin-bottom: 20px;
+        width: 80%; /* Ajusta a largura para 80% para telas pequenas */
+        margin-bottom: 20px; /* Adiciona um espaçamento entre os itens */
     }
 
     .cta .cta-btn {
