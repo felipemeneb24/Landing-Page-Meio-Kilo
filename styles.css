@@ -20,15 +20,19 @@ body {
     background-color: #ff6f00;
     color: #fff;
     padding: 10px 20px;
+    flex-wrap: wrap; /* Para garantir que o cabeçalho se ajuste em telas pequenas */
 }
 
 .header .logo img {
-    height: 80px;
+    height: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    max-width: 100%;
 }
 
 .nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens de navegação quebrem em múltiplas linhas se necessário */
+    justify-content: center;
 }
 
 .nav ul li {
@@ -48,7 +52,9 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Letras maiúsculas */
+    display: inline-block;
+    margin-left: 15px;
 }
 
 .cta .cta-btn:hover {
@@ -64,6 +70,8 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-text h2 {
@@ -74,22 +82,6 @@ body {
 .hero-text p {
     font-size: 1.25rem;
     margin-bottom: 20px;
-}
-
-.highlight-box {
-    background-color: #ff6f00;
-    padding: 10px 30px;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.highlight-box h3 {
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.highlight-box span {
-    font-weight: bold;
 }
 
 /* Seções */
@@ -105,58 +97,73 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.order-btn {
+    background-color: #28a745; /* verde */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #218838; /* tom mais escuro de verde no hover */
+}
+
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-/* Imagens */
-.images-section {
-    background-color: #f9f9f9;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.image-container {
+.menu-items {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
-.small-image {
-    width: 30%;
+.menu-item {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    width: 30%;
+    box-sizing: border-box;
 }
 
-.small-image:hover {
-    transform: scale(1.05);
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.offer {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    .small-image {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
+.testimonial-image {
+    margin-bottom: 20px;
+}
 
-    .cta .cta-btn {
-        margin-top: 10px;
-    }
-
-    .hero-text h2 {
-        font-size: 2rem;
-    }
+.testimonial-img {
+    width: 80%; /* Ajuste o tamanho conforme necessário */
+    max-width: 600px; /* Limita o tamanho máximo da imagem */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -174,4 +181,131 @@ footer {
 
 .social-links a:hover {
     text-decoration: underline;
+}
+
+/*seja um franqueado*/
+
+.highlight-box {
+    background-color: #ff6f00;  /* Cor de fundo amarela */
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.highlight-box h3 {
+    font-size: 1rem;
+    color: #000;
+}
+
+.highlight-box span {
+    font-weight: bold;
+    color: #ffffff;  /* Cor de destaque para o lucro */
+}
+
+/* Seção sobre Franqueados */
+.franchise {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.franchise p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.franchise-value {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.franchise-value h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3d2c2c;
+}
+
+.franchise-value ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.franchise-value ul li {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.franchise-value ul li strong {
+    color: #3d2c2c;
+}
+
+/* Seção de Imagens */
+.images-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Adicionando flex-wrap para quebrar os itens em telas pequenas */
+}
+
+.small-image {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.small-image:hover {
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+@media (max-width: 768px) {
+    .header .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 80%; /* Aumentando a largura dos itens no menu em telas pequenas */
+        margin-bottom: 20px;
+    }
+
+    .cta .cta-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .order-btn {
+        width: 100%; /* Botão de pedido ocupando a largura total em telas pequenas */
+        margin-top: 10px;
+    }
 }
