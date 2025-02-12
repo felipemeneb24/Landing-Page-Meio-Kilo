@@ -294,15 +294,16 @@ footer {
     }
 
     .menu-items {
-        flex-direction: column; /* Organiza os itens em coluna em telas pequenas */
-        justify-content: center; /* Garante que os itens fiquem centralizados */
-        align-items: center;     /* Alinha os itens ao centro */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-item {
-        width: 80%; /* Ajusta a largura para 80% para telas pequenas */
-        margin-bottom: 20px; /* Adiciona um espaçamento entre os itens */
+        width: 70%; /* Tente reduzir a largura, por exemplo, para 70% */
+        margin-bottom: 15px; /* Ajuste a margem para menos, se necessário */
     }
+}
 
     .cta .cta-btn {
         width: 100%;
