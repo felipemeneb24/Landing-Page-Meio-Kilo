@@ -105,9 +105,8 @@ section {
     padding: 5px 15px;
     font-size: 14px;
     border-radius: 5px;
+    margin-right: 10px;
     cursor: pointer;
-    margin-left: 10px;
-    transition: background-color 0.3s;
 }
 
 .order-btn:hover {
@@ -133,11 +132,15 @@ h2 {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 30%; /* A largura original dos itens */
-    margin: 10px; /* Adicionando margem entre os itens */
+    width: 30%; /* Garante que cada item ocupe 30% da largura, e todos tenham o mesmo tamanho */
+    margin: 10px;
     box-sizing: border-box;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox para manter a estrutura interna organizada */
+    justify-content: space-between; /* Garante que o conteúdo fique distribuído uniformemente */
 }
+
 
 .menu-item h3 {
     font-size: 1.5rem;
